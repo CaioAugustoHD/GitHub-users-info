@@ -6,6 +6,7 @@ import { Profile } from './components/Profile';
 import { Container } from './styles/Container';
 import { api } from './lib/axios';
 import { useEffect, useState } from 'react';
+import { Search } from './components/Search';
 
 interface ApiResponse  {
   avatar_url: string,
@@ -40,6 +41,7 @@ export function App() {
       <GlobalStyle/>
 
       <Container>
+        <Search/>
         <Profile 
           avatar = {apiData.avatar_url}
           name = {apiData.name}
