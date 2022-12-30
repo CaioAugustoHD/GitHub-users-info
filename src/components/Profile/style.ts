@@ -4,6 +4,7 @@ export const ProfileContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: ${({theme}) => theme.main};
 `;
 
 export const Avatar = styled.img`
