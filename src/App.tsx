@@ -7,6 +7,7 @@ import { Container } from './styles/Container';
 import { api } from './lib/axios';
 import { useEffect, useState } from 'react';
 import { Search } from './components/Search';
+import { UserData } from './components/UserData';
 
 interface ApiResponse  {
   avatar_url: string,
@@ -47,6 +48,7 @@ export function App() {
           name = {apiData.name}
           bio = {apiData.bio}
           />
+          <UserData/>
       </Container>
       
     </ThemeProvider>
