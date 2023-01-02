@@ -12,7 +12,11 @@ import { UserData } from './components/UserData';
 interface ApiResponse  {
   avatar_url: string,
   name: string,
-  bio: string
+  bio: string,
+  public_repos: number,
+  location: string,
+  followers: number,
+  following: number
 }
 
 export function App() {
@@ -48,7 +52,12 @@ export function App() {
           name = {apiData.name}
           bio = {apiData.bio}
           />
-          <UserData/>
+          <UserData
+            repos = {apiData.public_repos}
+            location = {apiData.location}
+            followers = {apiData.followers}
+            following = {apiData.following}
+          />
       </Container>
       
     </ThemeProvider>

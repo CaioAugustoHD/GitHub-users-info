@@ -4,7 +4,7 @@ import { CardContainer } from "./style";
 export interface CardProps {
     icone?: IconType,
     iconeAlign?: "text-top" | "top" | "auto",
-    value: number,
+    value?: number,
     text: string
 }
 
