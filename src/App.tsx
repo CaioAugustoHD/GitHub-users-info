@@ -8,6 +8,7 @@ import { api } from './lib/axios';
 import { useEffect, useState } from 'react';
 import { Search } from './components/Search';
 import { UserData } from './components/UserData';
+import { Footer } from './components/Footer';
 
 interface ApiResponse  {
   avatar_url: string,
@@ -16,7 +17,8 @@ interface ApiResponse  {
   public_repos: number,
   location: string,
   followers: number,
-  following: number
+  following: number,
+  html_url: string
 }
 
 export function App() {
@@ -57,6 +59,9 @@ export function App() {
             location = {apiData.location}
             followers = {apiData.followers}
             following = {apiData.following}
+          />
+          <Footer
+            url = {apiData.html_url}
           />
       </Container>
       
