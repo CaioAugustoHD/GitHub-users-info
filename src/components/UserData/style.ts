@@ -7,10 +7,18 @@ export const UserDataContainer = styled.section`
 `;
 
 interface InfoContainerProps  {
-    space: "space-evenly" | "center"
+    direction: "row" | "column"
 }
 
 export const InfoContainer = styled.div<InfoContainerProps>`
     display: flex;
-    justify-content: ${(props: InfoContainerProps) => props.space};
+    flex-direction: ${(props: InfoContainerProps) => props.direction};
+    justify-content: center;
+    align-items: center;
+`;
+
+export const Line = styled.hr`
+    width: 80%;
+    margin: 0.7em auto;
+    border: 1px solid ${({theme}) => theme.details}
 `;

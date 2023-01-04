@@ -2,12 +2,22 @@ import styled from "styled-components";
 
 interface CardContainerProps {
     iconeAlign?: "text-top" | "top" | "auto",
+    fontSize: number
 }
 export const CardContainer = styled.div<CardContainerProps>`
-    border: 1px solid black;
-    padding: 10px 0;
+    padding: 0.5em 0;
+    font-size: ${(props: CardContainerProps) => props.fontSize}em;
 
     svg {
-        vertical-align: ${(props: CardContainerProps) => props.iconeAlign}
+        vertical-align: ${(props: CardContainerProps) => props.iconeAlign};
+        color: ${({theme}) => theme.details}
     }
+`;
+
+export const TextSpan = styled.span`
+    color: ${({theme}) => theme.text}
+`;
+
+export const ValueSpan = styled(TextSpan)`
+    margin-left: 4px;
 `;
