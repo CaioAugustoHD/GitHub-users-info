@@ -17,5 +17,7 @@ export const Bio = styled.span`
 `;
 
 export const UserName = styled(Bio)`
-    font-size: 1.5em
+    font-size: 1.6em;
+    font-weight: 500;
+    color: ${({theme}) => theme.details};
 `;
