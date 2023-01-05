@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.main`
 
-    width: 50%;
+    width: min(50%, 520px);
     margin: auto;
-    border: 1px solid #000;
+    border: 2px solid ${({theme}) => theme.details};
+    border-radius: 10px;
 
     position: absolute;
     top: 50%;

@@ -5,6 +5,7 @@ export const FooterContainer = styled.section`
     padding: 1.5em 0;
     display: flex;
     justify-content: center;
+    border-radius: 0 0 10px 10px;
 `;
 
 export const GotoProfileLink = styled.a`
