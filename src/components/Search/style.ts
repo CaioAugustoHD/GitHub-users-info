@@ -17,7 +17,16 @@ export const SearchInput = styled.input`
 `;
 
 export const SearchButton = styled.button`
-    padding: 6px 11px;
+    padding: 7px 11px 5px;
     border-radius: 0 9px 9px 0;
-    border: 0
+    border: 0;
+    background-color: ${({theme}) => theme.details};
+    color: ${({theme}) => theme.body};
+    cursor: pointer;
+    transition: all 200ms ease;
+
+    :hover {
+        background-color: ${({theme}) => theme.inside};
+        color: ${({theme}) => theme.text};
+    }
 `;
