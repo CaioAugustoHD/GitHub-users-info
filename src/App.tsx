@@ -11,6 +11,7 @@ import { UserData } from './components/UserData';
 import { Footer } from './components/Footer';
 
 interface ApiResponse  {
+  login: string,
   avatar_url: string,
   name: string,
   bio: string,
@@ -23,6 +24,16 @@ interface ApiResponse  {
 
 export function App() {
 
+  const [user, setUser] = useState('');
+
+  function searchUser() {
+    if(user.length != 0){
+      ApiFetch(user);
+    } else {
+      alert('digite um usuario')
+    }
+  }
+
   const [apiData, setApiData] = useState<ApiResponse>({} as ApiResponse)
 
   async function ApiFetch(userName: string) {
@@ -31,24 +42,23 @@ export function App() {
 
     const response = await api.get(`/${userName}`);
     const data = response.data as ApiResponse;
-    setApiData(data);
-
+    setApiData(data)
     } catch(err) {
       console.log('Aconteceu um erro -> ' + err);
     }
 
   }
 
-  useEffect(() => {
-    ApiFetch('CaioAugustoHD')
-  }, []);
-
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle/>
 
       <Container>
-        <Search/>
+        <Search 
+          user={user} 
+          setUser={setUser}
+          searchUser={searchUser}
+          />
         <Profile 
           avatar = {apiData.avatar_url}
           name = {apiData.name}
