@@ -5,6 +5,7 @@ export const ProfileContainer = styled.section`
     flex-direction: column;
     align-items: center;
     background-color: ${({theme}) => theme.main};
+    border-radius: 0 0 8px 8px;
 `;
 
 export const Avatar = styled.img`

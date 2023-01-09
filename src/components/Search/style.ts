@@ -6,7 +6,7 @@ export const SearchContainer = styled.section`
     justify-content: center;
     padding: 0.5em 0;
     background-color: ${({theme}) => theme.main};
-    border-radius: 10px 10px 0 0;
+    border-radius: 8px 8px 0 0;
 `;
 
 export const SearchInput = styled.input`
