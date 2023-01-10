@@ -10,6 +10,8 @@ import { Search } from './components/Search';
 import { UserData } from './components/UserData';
 import { Footer } from './components/Footer';
 
+import ghost from './assets/ghost.png'
+
 interface ApiResponse  {
   login: string,
   avatar_url: string,
@@ -55,7 +57,7 @@ export function App() {
         name: 'Usuário não encontrado',
         bio: 'Verifique se o nome do usuário foi digitado corretamente',
         login: '',
-        avatar_url: '',
+        avatar_url: ghost,
         public_repos: 0,
         location: '',
         followers: 0,
