@@ -74,7 +74,7 @@ As principais funcionalidades do projeto são:
 
 **<p align="center">Captura de tela do projeto:</p>**
 <div align="center">
-  <img src="src/assets/imgprojeto.png" alt="Aplicação">
+  <img src="public/imgprojeto.png" alt="Aplicação">
 </div>
 
 &#xa0;
