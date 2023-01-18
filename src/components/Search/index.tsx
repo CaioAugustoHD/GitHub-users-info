@@ -4,7 +4,7 @@ import { FiSearch } from "react-icons/fi";
 interface SearchProps {
     user: string,
     setUser: React.Dispatch<React.SetStateAction<string>>,
-    searchUser: void
+    searchUser() : void
 }
 
 export function Search(props: SearchProps){
