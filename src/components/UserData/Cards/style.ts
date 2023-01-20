@@ -10,12 +10,12 @@ export const CardContainer = styled.div<CardContainerProps>`
 
     svg {
         vertical-align: ${(props: CardContainerProps) => props.iconeAlign};
-        color: ${({theme}) => theme.details}
+        color: ${({theme}) => theme.colors.details}
     }
 `;
 
 export const TextSpan = styled.span`
-    color: ${({theme}) => theme.text}
+    color: ${({theme}) => theme.colors.text}
 `;
 
 export const ValueSpan = styled(TextSpan)`
