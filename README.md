@@ -69,7 +69,7 @@ As principais funcionalidades do projeto são:
 ## :camera: Imagens
 **<p align="center">Exemplo de funcionamento:</p>**
 <div align="center">
-  <img src="src/assets/exemploprojeto.gif" alt="exemplo da aplicação em execução">
+  <img src="public/exemploprojeto.gif" alt="exemplo da aplicação em execução">
 </div>
 
 **<p align="center">Captura de tela do projeto:</p>**
@@ -93,6 +93,7 @@ Para utilizar o sistema, basta um navegador de sua preferência e conexão com i
 
 ## :link: Links
 * Repositório: https://github.com/CaioAugustoHD/GitHub-users-info
+* Deploy: https://github-usersinfo.netlify.app/
 
 &#xa0;
 
